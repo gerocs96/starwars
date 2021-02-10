@@ -1,0 +1,36 @@
+﻿<Window x:Class="RogueOne.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="720" Width="1280">
+    <Window.Background>
+        <ImageBrush ImageSource="Textures/main.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="Button_Play" Content="Play" BorderThickness="0" FontSize="70" Foreground="White" Background="Transparent" HorizontalContentAlignment="Right" Click="PlayButton"/>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="Button_HighScores" Content="HighScores" BorderThickness="0" FontSize="70" Foreground="White" Background="Transparent" HorizontalContentAlignment="Right" Click="HighscoreButton"/>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="Button_Controls" Content="Controls" BorderThickness="0" FontSize="70" Foreground="White" Background="Transparent" HorizontalContentAlignment="Right" Click="ControlsButton"/>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="Button_Exit" Content="Exit" BorderThickness="0" FontSize="70" Foreground="White" Background="Transparent" HorizontalContentAlignment="Right" Click="ExitButton"/>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="Button_NewGame" Content="New Game" BorderThickness="0" FontSize="70" Foreground="White" Background="Transparent" HorizontalContentAlignment="Right" Click="NewGameButton" IsEnabled="False" Visibility="Hidden"/>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="Button_LoadGame" Content="Load Game" BorderThickness="0" FontSize="70" Foreground="White" Background="Transparent" HorizontalContentAlignment="Right" Click="LoadGameButton" IsEnabled="False" Visibility="Hidden"/>
+        <Button Grid.Row="5" Grid.Column="0" x:Name="Button_Back" Content="Back" BorderThickness="0" FontSize="60" Foreground="White" Background="Transparent" HorizontalContentAlignment="Center" Click="BackButton" IsEnabled="False" Visibility="Hidden"/>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="Button_SoundOn" Content="Music On" BorderThickness="0" FontSize="40" Foreground="White" Background="Transparent" HorizontalContentAlignment="Center" Click="SoundButton"/>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="Button_SoundOff" Content="Music Off" BorderThickness="0" FontSize="40" Foreground="White" Background="Transparent" HorizontalContentAlignment="Center" Click="SoundButtoff"/>
+    </Grid>
+</Window>

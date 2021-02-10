@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['bossenemy_155',['BossEnemy',['../class_game_model_1_1_boss_enemy.html#a83e81f7d490991b9acda826ca19228bc',1,'GameModel.BossEnemy.BossEnemy(double centerx, double centery, Geometry area, string textpath, int dx, int dy, int health, int damage, int worth, bool target, double width, double height, int maxcharge)'],['../class_game_model_1_1_boss_enemy.html#a9c65f876a1d506094c6567bc730f347c',1,'GameModel.BossEnemy.BossEnemy(double centerx, double centery, Geometry area, int dx, int dy, int health, int damage, int worth, bool target, double width, double height, int maxcharge)']]],
+  ['builddisplay_156',['BuildDisplay',['../class_game_renderer_1_1_game_renderer.html#a7f19bad5d6566bb12c4184e76d462b09',1,'GameRenderer::GameRenderer']]],
+  ['bullet_157',['Bullet',['../class_game_model_1_1_bullet.html#ad1903ec9ca3fca78ef8cee70c2c8de60',1,'GameModel.Bullet.Bullet(double centerx, double centery, Brush color, Geometry area, double rotdegree, int dx, int dy, bool friendly, int damage, double width, double height)'],['../class_game_model_1_1_bullet.html#a6e4aa8d90b970f59a133881f53a9f769',1,'GameModel.Bullet.Bullet(double centerx, double centery, Geometry area, double rotdegree, int dx, int dy, bool friendly, int damage, double width, double height)']]]
+];

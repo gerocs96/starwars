@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AACA8286-D9E8-4548-B181-B5854D990CFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RogueOne</RootNamespace>
+    <AssemblyName>RogueOne</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net47\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="GameControl.cs" />
+    <Compile Include="MenuWindow.xaml.cs">
+      <DependentUpon>MenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AddScoreWindowViewModel.cs" />
+    <Compile Include="ViewModels\GameControlViewModel.cs" />
+    <Compile Include="ViewModels\HighScoreMenuViewModel.cs" />
+    <Compile Include="ViewModels\PauseViewModel.cs" />
+    <Compile Include="ViewModels\PlanetMenuViewModel.cs" />
+    <Compile Include="ViewModels\ShipMenuViewModel.cs" />
+    <Compile Include="Views\AddScoreWindow.xaml.cs">
+      <DependentUpon>AddScoreWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ControlsWindow.xaml.cs">
+      <DependentUpon>ControlsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HighScoreWindow.xaml.cs">
+      <DependentUpon>HighScoreWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PauseWindow.xaml.cs">
+      <DependentUpon>PauseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlanetMenuWindow.xaml.cs">
+      <DependentUpon>PlanetMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShipMenuWindow.xaml.cs">
+      <DependentUpon>ShipMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddScoreWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ControlsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HighScoreWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PauseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlanetMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShipMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Textures\fietighter.png" />
+    <EmbeddedResource Include="Textures\Space.jpg" />
+    <EmbeddedResource Include="Textures\tiefighter.png" />
+    <EmbeddedResource Include="Textures\xwing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Textures\stardestroyer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\garage.jpg" />
+    <EmbeddedResource Include="Textures\deathstar.png" />
+    <EmbeddedResource Include="Textures\falcon.png" />
+    <EmbeddedResource Include="Textures\jedifighter.png" />
+    <EmbeddedResource Include="Textures\naboofighter.png" />
+    <EmbeddedResource Include="Textures\slave.png" />
+    <EmbeddedResource Include="Textures\t47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameLogic\GameLogic.csproj">
+      <Project>{4E615EE7-EA6B-45B2-9B9B-57B661383E29}</Project>
+      <Name>GameLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameModel\GameModel.csproj">
+      <Project>{EAE08201-ED15-44B4-861E-0B94C3FA7A0C}</Project>
+      <Name>GameModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameRenderer\GameRenderer.csproj">
+      <Project>{61A31392-B287-472A-87E3-56392858C4BC}</Project>
+      <Name>GameRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameRepository\GameRepository.csproj">
+      <Project>{1020CA27-C904-4C85-AF66-09E0E0EE74E1}</Project>
+      <Name>GameRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\mousefire.jpg" />
+    <Resource Include="Textures\mousemove.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\falconmenu.jpg" />
+    <Resource Include="Textures\jedifightermenu.jpg" />
+    <Resource Include="Textures\naboomenu.jpg" />
+    <Resource Include="Textures\t47menu.jpg" />
+    <Resource Include="Textures\xwingmenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\coruscant_00000.jpg" />
+    <Resource Include="Textures\hoth 2_00000.jpg" />
+    <Resource Include="Textures\mustafar_00000.jpg" />
+    <Resource Include="Textures\scarif_00000.jpg" />
+    <Resource Include="Textures\space_00000.jpg" />
+    <Resource Include="Textures\tatooine_00000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Textures\coruscant.jpg" />
+    <EmbeddedResource Include="Textures\hoth.jpg" />
+    <EmbeddedResource Include="Textures\mustafar.jpg" />
+    <EmbeddedResource Include="Textures\scarif.jpg" />
+    <EmbeddedResource Include="Textures\tatooine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="menumusic.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['main_59',['Main',['../class_rogue_one_1_1_app.html#a9ad7d49e02b46d6fbf6b1b1b6ea78802',1,'RogueOne.App.Main()'],['../class_rogue_one_1_1_app.html#a9ad7d49e02b46d6fbf6b1b1b6ea78802',1,'RogueOne.App.Main()']]],
+  ['mainwindow_60',['MainWindow',['../class_rogue_one_1_1_main_window.html',1,'RogueOne.MainWindow'],['../class_rogue_one_1_1_main_window.html#a4a3e9ea49c1e79ef86225b38ed9c7459',1,'RogueOne.MainWindow.MainWindow(string ship, string map, IGameRepository repo)'],['../class_rogue_one_1_1_main_window.html#aaabf294a9dcff1968acde024c26c8114',1,'RogueOne.MainWindow.MainWindow(IGameModel model, IGameRepository repo, bool load)']]],
+  ['map_61',['Map',['../class_game_model_1_1_game_model.html#ab6c7cdd4a69fd627b96c78519951c110',1,'GameModel.GameModel.Map()'],['../interface_game_model_1_1_i_game_model.html#ab24d0f246fd591115f0897d3f61c80e2',1,'GameModel.IGameModel.Map()'],['../class_rogue_one_1_1_view_models_1_1_game_control_view_model.html#ad8486693e9a4c052bb7107cb612676e3',1,'RogueOne.ViewModels.GameControlViewModel.Map()']]],
+  ['maxhealth_62',['MaxHealth',['../class_game_model_1_1_ship.html#ae79f3037beebda992d1826d601fea450',1,'GameModel::Ship']]],
+  ['menuwindow_63',['MenuWindow',['../class_rogue_one_1_1_menu_window.html',1,'RogueOne.MenuWindow'],['../class_rogue_one_1_1_menu_window.html#a33dd131437a4b03ca12899ed1b3ef600',1,'RogueOne.MenuWindow.MenuWindow()']]],
+  ['model_64',['Model',['../class_rogue_one_1_1_view_models_1_1_game_control_view_model.html#a857ec3f05b2f98835bc184309a2ddb3f',1,'RogueOne.ViewModels.GameControlViewModel.Model()'],['../class_rogue_one_1_1_view_models_1_1_pause_view_model.html#ac7ff57c807c20ca6b018035068da9c25',1,'RogueOne.ViewModels.PauseViewModel.Model()']]],
+  ['moveplayer_65',['MovePlayer',['../class_game_logic_1_1_game_logic.html#a8d934c2eccb7afc2036c0ed05eb3ca66',1,'GameLogic.GameLogic.MovePlayer()'],['../interface_game_logic_1_1_i_game_logic.html#ae450c820166107e452df06686adeac2a',1,'GameLogic.IGameLogic.MovePlayer()']]],
+  ['moveplayer_5fshouldmoveplayeronespeedunit_5fwhenthepointisfarenough_66',['MovePlayer_ShouldMovePlayerOneSpeedUnit_WhenThePointIsFarEnough',['../class_game_logic_tests_1_1_logic_tests.html#a885f7d2dd06a87ee4e9aa5d6773067dc',1,'GameLogicTests::LogicTests']]],
+  ['moveplayer_5fshouldnotmoveplayer_5fwhenthepointisnotfarenough_67',['MovePlayer_ShouldNotMovePlayer_WhenThePointIsNotFarEnough',['../class_game_logic_tests_1_1_logic_tests.html#a9bcdd48fb098a4276ae81f86ed4fa12a',1,'GameLogicTests::LogicTests']]]
+];

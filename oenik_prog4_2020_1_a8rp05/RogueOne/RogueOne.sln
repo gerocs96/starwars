@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueOne", "RogueOne\RogueOne.csproj", "{AACA8286-D9E8-4548-B181-B5854D990CFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicTests", "GameLogicTests\GameLogicTests.csproj", "{C88B1CF7-A915-4DCB-A88C-125BD8EBD371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogic", "GameLogic\GameLogic.csproj", "{4E615EE7-EA6B-45B2-9B9B-57B661383E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameModel", "GameModel\GameModel.csproj", "{EAE08201-ED15-44B4-861E-0B94C3FA7A0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRepository", "GameRepository\GameRepository.csproj", "{1020CA27-C904-4C85-AF66-09E0E0EE74E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRenderer", "GameRenderer\GameRenderer.csproj", "{61A31392-B287-472A-87E3-56392858C4BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AACA8286-D9E8-4548-B181-B5854D990CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACA8286-D9E8-4548-B181-B5854D990CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACA8286-D9E8-4548-B181-B5854D990CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACA8286-D9E8-4548-B181-B5854D990CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C88B1CF7-A915-4DCB-A88C-125BD8EBD371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88B1CF7-A915-4DCB-A88C-125BD8EBD371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88B1CF7-A915-4DCB-A88C-125BD8EBD371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88B1CF7-A915-4DCB-A88C-125BD8EBD371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E615EE7-EA6B-45B2-9B9B-57B661383E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E615EE7-EA6B-45B2-9B9B-57B661383E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E615EE7-EA6B-45B2-9B9B-57B661383E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E615EE7-EA6B-45B2-9B9B-57B661383E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE08201-ED15-44B4-861E-0B94C3FA7A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE08201-ED15-44B4-861E-0B94C3FA7A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE08201-ED15-44B4-861E-0B94C3FA7A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE08201-ED15-44B4-861E-0B94C3FA7A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1020CA27-C904-4C85-AF66-09E0E0EE74E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1020CA27-C904-4C85-AF66-09E0E0EE74E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1020CA27-C904-4C85-AF66-09E0E0EE74E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1020CA27-C904-4C85-AF66-09E0E0EE74E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A31392-B287-472A-87E3-56392858C4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A31392-B287-472A-87E3-56392858C4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A31392-B287-472A-87E3-56392858C4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A31392-B287-472A-87E3-56392858C4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF7E1DAC-3CF2-4C37-924D-BF83A56E43C5}
+	EndGlobalSection
+EndGlobal

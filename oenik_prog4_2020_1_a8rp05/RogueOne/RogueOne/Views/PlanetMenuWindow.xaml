@@ -1,0 +1,59 @@
+﻿<Window x:Class="RogueOne.Views.PlanetMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RogueOne.Views"
+        xmlns:vm="clr-namespace:RogueOne.ViewModels"
+        mc:Ignorable="d"
+        Title="PlanetMenuWindow" Height="720" Width="1280">
+    <Window.Background>
+        <ImageBrush ImageSource="/Textures/garage.jpg"></ImageBrush>
+    </Window.Background>
+    <Window.Resources>
+        <vm:PlanetMenuViewModel x:Key="PMVM" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="1" Grid.Column="1" Stretch="Fill" Source="/Textures/tatooine_00000.jpg" MouseLeftButtonDown="TatooineClick"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Tatoonie" FontSize="50" Foreground="White" Padding="0"/>
+        <Image Grid.Row="1" Grid.Column="3" Stretch="Fill" Source="/Textures/hoth 2_00000.jpg" MouseLeftButtonDown="HothClick"/>
+        <Label Grid.Row="2" Grid.Column="3" Content="Hoth" FontSize="50" Foreground="White" Padding="0"/>
+        <Image Grid.Row="1" Grid.Column="5" Stretch="Fill" Source="/Textures/scarif_00000.jpg" MouseLeftButtonDown="ScarifClick"/>
+        <Label Grid.Row="2" Grid.Column="5" Content="Scarif" FontSize="50" Foreground="White" Padding="0"/>
+        <Image Grid.Row="3" Grid.Column="1" Stretch="Fill" Source="/Textures/mustafar_00000.jpg" MouseLeftButtonDown="MustafarClick"/>
+        <Label Grid.Row="4" Grid.Column="1" Content="Mustafar" FontSize="50" Foreground="White" Padding="0"/>
+        <Image Grid.Row="3" Grid.Column="3" Stretch="Fill" Source="/Textures/coruscant_00000.jpg" MouseLeftButtonDown="CoruscantClick"/>
+        <Label Grid.Row="4" Grid.Column="3" Content="Coruscant" FontSize="50" Foreground="White" Padding="0"/>
+        <Image Grid.Row="3" Grid.Column="5" Stretch="Fill" Source="/Textures/space_00000.jpg" MouseLeftButtonDown="SpaceClick"/>
+        <Label Grid.Row="4" Grid.Column="5" Content="Space" FontSize="50" Foreground="White" Padding="0"/>
+        <Grid Grid.Row="5" Grid.Column="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="1" Grid.Column="1" Content="Back" FontSize="45" Foreground="White" Background="Transparent" BorderThickness="0" Click="BackButton" HorizontalContentAlignment="Right" VerticalContentAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>
